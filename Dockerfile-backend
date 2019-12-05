@@ -1,5 +1,5 @@
 # Using postgres latest image
-FROM library:postgres
+FROM postgres:11.1
 
 MAINTAINER Ramakrishna Kothamasu "krishna.ubuntu@gmail.com"
 
