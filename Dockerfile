@@ -7,8 +7,9 @@ WORKDIR /app
 
 COPY . /app
 
-# Install any needed packages specified in the requirements.txt
-RUN pip install --trusted-host pypi.python.org -r requirements.txt
+# Install Flask and ipaddress
+RUN pip install --trusted-host pypi.python.org Flask
+RUN pip install --trusted-host pypi.python.org ipaddress
 
 ENTRYPOINT [ "python" ]
 
